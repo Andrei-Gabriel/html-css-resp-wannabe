@@ -78,14 +78,20 @@ img {
     margin: 0;
     box-sizing: border-box;
   }
-  #lezioni {
-    background-color: wheat;
-    padding: 5px;
+  body > div {
+    padding: 5px 5px 10px;
     width: 100vw;
+  }
+  #lezioni, #why {
+    background-color: #f2f2cd;
+  }
+  #steps {
+    background-color: #ffffff;
   }
   .row {
       width: 100%;
       margin: unset;
+      font-size: 12px;
   }
   .row::after {
     display: unset;
@@ -93,11 +99,32 @@ img {
     clear: unset;
   }
     .row > div {
-      margin: 20px auto
+      margin: 15px auto 0;
+    }
+    .row h1 {
+      font-size: 20px;
+    }
+    .row h3 {
+      font-size: 13px;
+    }
+    .row img {
+      height: 90px;
     }
     #lezioni .row>.left,
     #lezioni .row>.right {
       width: 100%;
       float: unset;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      float: unset;
+      width: 100%;
+    }
+    #why .row>.first,
+    #why .row>.second,
+    #why .row>.third {
+      width: 100%;
+      margin-top: 15px;
     }
 }
