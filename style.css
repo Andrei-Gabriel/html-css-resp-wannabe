@@ -80,9 +80,11 @@ img {
   }
   #lezioni {
     background-color: wheat;
+    padding: 5px;
+    width: 100vw;
   }
   .row {
-      width: 100vw;
+      width: 100%;
       margin: unset;
   }
   .row::after {
