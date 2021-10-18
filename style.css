@@ -71,3 +71,31 @@ img {
 .clear {
   clear: both;
 }
+
+@media screen and (max-width: 419px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #lezioni {
+    background-color: wheat;
+  }
+  .row {
+      width: 100vw;
+      margin: unset;
+  }
+  .row::after {
+    display: unset;
+    content: unset;
+    clear: unset;
+  }
+    .row > div {
+      margin: 20px auto
+    }
+    #lezioni .row>.left,
+    #lezioni .row>.right {
+      width: 100%;
+      float: unset;
+    }
+}
